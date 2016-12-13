@@ -1,0 +1,1 @@
+Simple data generation tool based on randomness. This helped me a lot understanding the normal distribution and cumulative distribution function. It outputs data in one or two dimensions since I wanted to visualize them easily. It also contains numerical computation method for cumulative distribution function.
