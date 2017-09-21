@@ -86,14 +86,14 @@ public class DataMain {
 
 	}
 
-	private static double normalDistribution(double mean, double variance,Random rand){
+	private static double normalDistribution(double mean,double stddev,Random rand){
 		
-		double sum=mean;
+		double sum=0;
 		for(int i=0;i<12;i++){
-			sum+=rand.nextDouble();
+			sum+=stddev * rand.nextDouble();
 		}
-		sum-=6;
-		return sum*Math.sqrt(variance);
+		sum-=6* stddev;
+		return mean+ sum;
 	}
 
 
